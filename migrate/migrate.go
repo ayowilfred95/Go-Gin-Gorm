@@ -12,6 +12,6 @@ func init(){
 	database.ConnectDB()
 }
 func main(){
-	database.DB.AutoMigrate(&models.Blog{})
-	database.DB.AutoMigrate(&models.Tag{})
+	database.DB.AutoMigrate(&models.Blog{}, &models.Tag{})
+	
 }
